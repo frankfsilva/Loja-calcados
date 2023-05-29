@@ -167,7 +167,7 @@ nav li {
     .produto h3 {
         font-size: 20px;
     }
-    
+
     .produto p {
         font-size: 1em;
         line-height: 2em;
@@ -178,7 +178,7 @@ nav li {
     }
 }
 
-/*Smartphone portrait*/
+/*Smartphone IPHONE SE portrait*/
 
 @media screen and (orientation: portrait) and (max-width: 667px) {
 
@@ -224,7 +224,7 @@ nav li {
     .produto h3 {
         font-size: 20px;
     }
-    
+
     .produto p {
         font-size: 1em;
         line-height: 1.5em;
@@ -236,7 +236,7 @@ nav li {
     }
     }
 
-    /*Smartphone landscape*/
+    /*Smartphone IPHONE SE landscape*/
 
 @media screen and (orientation: landscape) and (max-width: 667px) {
 
@@ -244,7 +244,7 @@ nav li {
         display:flex;
         margin-top: 16px;
     }
-        
+
     .textos h4 {
         margin-bottom: 2px;
         font-size: 12px;
@@ -272,6 +272,44 @@ nav li {
         font-size: 16px;
     }
 }
+
+    /*Smartphone Galaxy A51/57 landscape*/
+
+    @media screen and (orientation: landscape) and (min-width: 667px) and (max-width: 914px) {
+
+        .sobre { 
+            display:flex;
+            margin-top: 16px;
+        }
+
+        .sobre img {
+            width: 50%;
+            margin-bottom: 20px;
+        }
+
+        .textos {
+            margin-left: 25px;
+            height: 200px;
+            padding: 0;
+        }
+
+        .produto img {
+            height: 358.28px;
+        }
+
+        .produto h3 {
+            font-size: 20px;
+        }
+
+        .produto p {
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+
+        .produto button {
+            font-size: 16px;
+        }
+    }
 
 
 
