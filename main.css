@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color:#4d4fe7;                       /*cor de fundo do header, fora a fora*/
+}
+
+header h1,
+header a {
+    color:#fff;                                    /*cor da fonte do cabeçalho e menu cabeçalho*/
+    text-decoration: none;
+    width: fit-content;
+}
+
+header h1 {
+    font-style: italic;
+    font-size: 32px;
+}
+
+header .container {
+    justify-content:space-between;                  /*itens utilizando toda a largura do container*/
+    height: 60px;                                   /*altura do container*/
+}
+
+.container {
+    max-width: 1024px;                              /*largura máxima do container*/
+    width: 60%;
+    margin: 0 auto;
+    padding: 16px auto;
+    display:flex;                                   /*alinhar todos itens do container na horizontal*/
+    align-items: center;
+}
+
+.menu-header {
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+}
+
+nav li {
+    display: inline;                                /*alinhar os li's na horizontal*/
+    margin-left: 5px;                               /*espaço entre os li's*/
+}
+
+.sobre img,
+.sobre h2,
+.sobre h3 {
+    display: inline;
+    align-items: center;
+}
+
+.sobre { 
+    display:flex;
+    margin-top: 32px;
+}
+
+.textos {
+    margin-left: 25px;
+    height: 200px;
+    padding: 0;
+}
+
+.textos h2,
+.produtos-menu h2 {
+    color: #4d4fe7;
+    font-style: italic;
+    font-size: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #4d4fe7;
+}
+
+.textos h2,
+.textos h4  {
+    display:flex;
+    text-align: justify;
+}
+
+.sobre img {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.produtos-menu {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.produtos {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 24.5%);
+    column-gap: 0.66%;
+    height: 150px;
+}
+
+.produto {
+    height: 100%;
+}
+
+.produto button {
+    background-color: #4d4fe7;
+    color: #fff;
+    border: none;
+    height: 32px;
+    border-radius: 5px;
+    width: 100%;
+    margin: 16px auto;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.produto img {
+    width: 100%;
+    height: 151.55px;
+}
+
+.produto h3 {
+    font-size: 16px;
+}
+
+.produto p {
+    margin-top: 16px;
+    font-size: 10px;
+    line-height: 16px;
+}
+
+/*Tablets portrait e landscape*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container {
+        width: 80%;
+    }
+
+    .menu-header {
+        width: fit-content;
+    }
+
+    .sobre { 
+        display: inline;
+    }
+
+    .sobre img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .textos {
+        margin-left: 0;
+        height: 130px;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+    }
+
+    .produto img {
+        height: 321.44px;
+    }
+
+    .produto h3 {
+        font-size: 20px;
+    }
+    
+    .produto p {
+        font-size: 1em;
+        line-height: 2em;
+    }
+
+    .produto button {
+        font-size: 16px;
+    }
+}
+
+/*Smartphone portrait*/
+
+@media screen and (orientation: portrait) and (max-width: 667px) {
+
+    .container {
+        width: 80%;
+    }
+
+    header .container {
+        height: 80px;                                   /*altura do container*/
+    }
+
+    .menu-header {
+        font-size: 20px;
+    }
+
+    .sobre { 
+        display: inline;
+        margin-bottom: 16px;
+    }
+
+    .sobre img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .textos {
+        margin-left: 0;
+        height: 130px;
+    }
+
+    .produtos-menu {
+        margin-top: 64px;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .produto img {
+        height: 300px;
+    }
+
+    .produto h3 {
+        font-size: 20px;
+    }
+    
+    .produto p {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    .produto button {
+        height: 2em;
+        font-size: 1.5em;
+    }
+    }
+
+    /*Smartphone landscape*/
+
+@media screen and (orientation: landscape) and (max-width: 667px) {
+
+    .sobre { 
+        display:flex;
+        margin-top: 16px;
+    }
+        
+    .textos h4 {
+        margin-bottom: 2px;
+        font-size: 12px;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+    }
+
+    .produto img {
+        height: 196.08px;
+    }
+
+    .produto h3 {
+        font-size: 20px;
+    }
+    
+    .produto p {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    .produto button {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
